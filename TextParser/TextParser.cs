@@ -10,6 +10,7 @@
             Minus = 8722,
             MinusFromKeyboard = 45
         }
+
         // массив содержит все возможные виды дефиса в словах
         private static ConnectingLine[] _wordConnectors = new ConnectingLine[]
         {   ConnectingLine.MinusFromKeyboard,
@@ -17,6 +18,7 @@
             ConnectingLine.Dash,
             ConnectingLine.ShortDash
         };
+
         // массив содержит основные разделители в тексте, чтобы разбить текст на слова
         private static char[] _separators = new char[]
         { (char)ConnectingLine.LongDash, ' ', '.', ',', '!', '?', ';', ':', '(', ')', '[', ']', '\r', '\t', '\n' };
