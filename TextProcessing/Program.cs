@@ -31,8 +31,8 @@ namespace TextProcessing
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                Console.ReadLine();
             }
+            Console.ReadLine();
         }
 
         private static MethodInfo? GetMethodFromAssembly()
@@ -46,7 +46,7 @@ namespace TextProcessing
         private static void PrintInfo()
         {
             Console.WriteLine("Количество всех уникальных слов подсчитано!" +
-                                "\nТекстовый файл со статистикой находится в папке Debug данного проекта." +
+                                "\nТекстовый файл со статистикой находится в папке TextProcessing\\bin/Debug/net7.0" +
                                 "\nНажмите любую кнопку для выхода");
         }
     }
