@@ -13,6 +13,12 @@ namespace TextProcessing
           
             Console.WriteLine("Введите полный путь к текстовому файлу:");
             string path = Console.ReadLine();
+            if(path.Length == 0) 
+            {
+                Console.WriteLine("Введена пустая строка.");
+                return;
+            }
+
             try
             {
                 TxtFileReader txtFileReader = new TxtFileReader(path);
@@ -27,8 +33,6 @@ namespace TextProcessing
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
-
-            Console.ReadLine();
         }
 
         private static MethodInfo? GetMethodFromAssembly()
