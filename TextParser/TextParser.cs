@@ -10,7 +10,7 @@
             Minus = 8722,
             MinusFromKeyboard = 45
         }
-        // массив содержит все возможные виды девфиса в словах
+        // массив содержит все возможные виды дефиса в словах
         private static ConnectingLine[] _wordConnectors = new ConnectingLine[]
         {   ConnectingLine.MinusFromKeyboard,
             ConnectingLine.Minus,
